@@ -1,0 +1,7 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.MojLajf.eu/$1 [R,L]
